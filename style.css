@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.encabezado {
+    background-color: blue;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+.encabezado p {
+    margin: 0;
+}
+
+.sobreMi {
+    padding: 20px;
+    text-align: center;
+    background-color: bisque;
+}
+
+.proyectos {
+    padding: 20px;
+    background-color: white;
+}
+
+.contenedorProyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.proyecto {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.proyecto h3 {
+    margin-top: 10px;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+
+.contacto {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.pie {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contenedorProyectos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedorProyectos {
+        grid-template-columns: 1fr;
+    }
+}
